@@ -16,10 +16,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Controller
 public class TimeController {
-    @RequestMapping(value = "/time", method = RequestMethod.GET)
-    public View viewSuperSexyStuff(){
-        return new RedirectView("/calendar/time");
-    }
 
     @RequestMapping(value = "/calendar/time", method = RequestMethod.GET)
     public ModelAndView time() {

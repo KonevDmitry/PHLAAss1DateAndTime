@@ -14,10 +14,6 @@ import java.time.format.DateTimeFormatter;
 
 @Controller
 public class DateController {
-    @RequestMapping(value = "/date", method = RequestMethod.GET)
-    public View viewSuperSexyStuff(){
-        return new RedirectView("/calendar/date");
-    }
 
     @RequestMapping(value = "/calendar/date", method = RequestMethod.GET)
     public ModelAndView date() {
